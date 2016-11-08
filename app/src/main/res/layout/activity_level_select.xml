@@ -61,4 +61,14 @@
         android:onClick="levelOne"
         />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/encyclopediaButton"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/encyclopedia_button"
+        android:onClick="encyclopedia"
+        android:layout_below="@+id/levelTwo"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

@@ -26,6 +26,9 @@
         <activity
             android:name=".PlayActivity"
             android:screenOrientation="landscape" />
+        <activity
+            android:name=".EncyclopediaActivity"
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>

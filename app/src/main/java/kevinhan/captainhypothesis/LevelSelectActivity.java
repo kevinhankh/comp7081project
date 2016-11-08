@@ -36,4 +36,9 @@ public class LevelSelectActivity extends AppCompatActivity {
         Intent playIntent = new Intent(this, PlayActivity.class);
         startActivity(playIntent);
     }
+
+    public void encyclopedia(View view) {
+        Intent encyclopediaIntent = new Intent(this, EncyclopediaActivity.class);
+        startActivity(encyclopediaIntent);
+    }
 }

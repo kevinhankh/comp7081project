@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_encyclopedia"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kevinhan.captainhypothesis.EncyclopediaActivity"
+    android:background="@drawable/main_background">
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_button"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:onClick="backButton"
+        />
+
+    <Button
+        android:id="@+id/Settings"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:background="@drawable/settings_button"
+        android:onClick="settingsButton"
+        android:layout_marginEnd="20dp"
+        android:layout_alignBaseline="@+id/Back"
+        android:layout_alignBottom="@+id/Back"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:text="Table of Contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignStart="@+id/Back"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:text="Content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="96dp"
+        android:layout_marginTop="27dp"
+        android:id="@+id/textView2"
+        android:textSize="24dp"
+        android:layout_below="@+id/Settings"
+        android:layout_toStartOf="@+id/Settings" />
+
+    <TextView
+        android:text="Sample Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="67dp"
+        android:id="@+id/textView4" />
+
+</RelativeLayout>
