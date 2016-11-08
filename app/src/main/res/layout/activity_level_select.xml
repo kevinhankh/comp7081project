@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_level_select"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kevinhan.captainhypothesis.LevelSelectActivity"
+    android:background="@drawable/main_background">
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_button"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:onClick="backButton"
+        />
+
+    <Button
+        android:id="@+id/Settings"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:background="@drawable/settings_button"
+        android:onClick="settingsButton"
+        android:layout_marginEnd="20dp"
+        android:layout_alignBaseline="@+id/Back"
+        android:layout_alignBottom="@+id/Back"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/levelTwo"
+        android:background="@drawable/level_two"
+        android:onClick="levelTwo"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/levelThree"
+        android:layout_alignBaseline="@+id/levelTwo"
+        android:layout_alignBottom="@+id/levelTwo"
+        android:layout_toStartOf="@+id/Settings"
+        android:layout_marginEnd="37dp"
+        android:background="@drawable/level_three"
+        android:onClick="levelThree"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/levelOne"
+        android:layout_alignBaseline="@+id/levelTwo"
+        android:layout_alignBottom="@+id/levelTwo"
+        android:layout_toEndOf="@+id/Back"
+        android:background="@drawable/level_one"
+        android:onClick="levelOne"
+        />
+
+</RelativeLayout>

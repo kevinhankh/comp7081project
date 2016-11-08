@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_play"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context="kevinhan.captainhypothesis.PlayActivity">
+
+    <kevinhan.captainhypothesis.PlayView
+        android:id="@+id/play_view"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        />
+
+    <ImageButton
+        android:id="@+id/ability_defensive"
+        android:layout_width="50dp"
+        android:layout_height="140dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:onClick="abilityDefensive"
+        android:src="@drawable/shield"/>
+
+    <ImageButton
+        android:id="@+id/ability_one"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="90dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="abilityOne"
+        android:src="@drawable/laser"/>
+
+    <ImageButton
+        android:id="@+id/ability_two"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/ability_one"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="abilityTwo"
+        android:src="@drawable/apple"/>
+
+    <ImageButton
+        android:id="@+id/ability_attack"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="abilityAttack"
+        android:src="@drawable/punch"/>
+
+</RelativeLayout>
